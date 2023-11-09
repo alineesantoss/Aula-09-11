@@ -1,0 +1,43 @@
+public class Automovel {
+    
+    public static void main(String args[]){
+        Automovel fusca = new Automovel();
+        
+        // Altera os atributos do objeto fusca
+        fusca.marca = "Volkswagen";
+        fusca.cor = "Vermelho";
+        fusca.velocidade = 100;
+        
+        System.out.println("Marca: "+fusca.marca);
+        System.out.println("Cor: "+fusca.cor);
+        System.out.println("Velocidade "+fusca.velocidade);
+        fusca.acelerar();
+        fusca.acelerar();
+        fusca.reduzir();
+
+    }
+        
+    // Atributos
+    String marca;
+    String cor;
+    int velocidade;
+    
+    // Métodos
+    void businar(){
+        System.out.println("BEEEEEEEP...");
+    
+        }
+        
+        void acelerar(){
+            velocidade = velocidade + 1;
+            
+    
+        }
+        
+        void reduzir(){
+            velocidade = velocidade - 1;
+        }
+    }
+    
+
+    
